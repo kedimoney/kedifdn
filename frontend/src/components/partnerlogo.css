@@ -1,0 +1,19 @@
+.partner-logo {
+  max-width: 120px;
+  height: auto;
+  margin: 1rem;
+  filter: grayscale(0%);
+  transition: filter 0.2s ease;
+}
+
+.partner-logo:hover {
+  filter: grayscale(20%);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .partner-logo {
+    max-width: 80px;
+    margin: 0.5rem;
+  }
+}

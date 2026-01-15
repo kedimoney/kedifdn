@@ -1,0 +1,39 @@
+.partners-hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.partners-hero h1 {
+  margin-bottom: 1rem;
+}
+
+.partners-hero p {
+  font-size: 1.2rem;
+}
+
+.partners-logos {
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: var(--white);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .partners-hero {
+    padding: 3rem 1rem;
+  }
+
+  .partners-hero h1 {
+    font-size: 2rem;
+  }
+
+  .partners-logos {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+}
