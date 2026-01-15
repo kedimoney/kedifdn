@@ -69,12 +69,15 @@ This is a full-stack web application for KEDIFDN, consisting of a React frontend
 3. Deploy. Netlify will provide a URL for your frontend.
 
 #### Option 2: Render
-1. Create a new Static Site on Render.
+1. Create a new Web Service on Render.
 2. Connect your repository.
-3. Set build settings:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-4. Deploy. Render will provide a URL for your frontend.
+3. Set root directory to `frontend`.
+4. Set build and start settings:
+   - Build command: `npm install && npm run build`
+   - Start command: `npm start`
+5. Add environment variable:
+   - `PORT`: Set to `10000` (Render's default)
+6. Deploy. Render will provide a URL for your frontend.
 
 **Note:** For production, update the API base URL in `frontend/src/services/api.js` from `http://localhost:5000/api` to your deployed backend URL.
 
